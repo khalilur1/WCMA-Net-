@@ -1,0 +1,17 @@
+Dependencies
+
+- Python ≥ 3.8 (recommended)
+- PyTorch (CPU or CUDA version)
+- NumPy
+- OpenCV (opencv-python)
+- PyWavelets
+- scikit-learn
+- Matplotlib
+- Seaborn
+
+You can install all dependencies with:
+
+```bash
+pip install -r requirements.txt
+
+For a CUDA-enabled PyTorch installation, please follow the official PyTorch instructions and adjust the torch installation accordingly

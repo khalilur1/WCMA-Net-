@@ -1,0 +1,23 @@
+datasets/
+├── 0/   # Benign cases
+│   ├── img_001.png
+│   ├── img_002.png
+│   └── ...
+└── 1/   # Malignant cases
+    ├── img_101.png
+    ├── img_102.png
+    └── ...
+
+mages are read in grayscale and resized to 64×64.
+
+A Gaussian notch filter is applied in the frequency domain.
+
+A 2D discrete wavelet transform (DWT, 'haar') is used to get LL, LH, HL, HH components.
+
+These components are flattened and combined into a single feature map, then reshaped to (N, 1, 64, 64) for CNN input.
+
+Update dataset_dir in the preprocessing scripts if your dataset is in a different location.
+
+Public Dataset available at: https://www.cancerimagingarchive.net › collection › cbis-ddsm
+
+For private Dataset need approval from PINUM Hopital
